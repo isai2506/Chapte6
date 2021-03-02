@@ -146,4 +146,26 @@
 
 ## Exercise 6.6
 
+    #include <stdio.h>
+    int main() {
+    int hour;
+    int pay;
+    int pay2;
+    printf("Enter number of hours worked in the week: ");
+    scanf("%d", &hour);
+    int h; /*For each hour worked the payment is 100 pesos */
+    h=100;
+
+    pay=(hour*h);
+    pay2=(pay*1.5);
+
+    if (hour<=40)
+    printf("Your weekly pay is %d\n pesos", pay);
+       else if(hour>=40)
+       printf("Your weekly pay is %d\n pesos", pay2);
+    
+    return 0;
+   }
+
+
 
