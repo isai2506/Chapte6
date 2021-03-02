@@ -87,3 +87,38 @@
     }
 
 ## Exercise 6.4
+
+     #include <stdio.h>
+
+    char line[100];/* line of input data */
+    int amount;
+    int quarters; /* the height of the rectangle */
+    int dimes; /* the width of the rectangle */
+    int nickels; /* perimeter of the rectangle (computed) */
+    int pennies;
+    int main()
+    
+    {
+    printf("Give an amount of money less than $1.00 (in cents) ");
+    fgets(line, sizeof(line), stdin);
+
+    sscanf(line, "%d", &amount);
+   
+    quarters = (amount/25);
+    printf("Quarters: %d\n", quarters);
+
+    dimes = (amount-25*quarters)/10;
+    printf("Dimes: %d\n", dimes);
+
+    nickels = (amount-25*quarters-10*dimes)/5;
+    printf("nickels: %d\n", nickels);
+
+     pennies = (amount-25*quarters-10*dimes-5*nickels);
+     printf("Penniess: %d\n", pennies);
+     
+    return (0);
+ 
+     }
+     
+ ## Exercise 6.5
+
