@@ -37,7 +37,7 @@ square = pow((distance),2);
  
  }
 
-##Exercise 6.2
+##  Exercise 6.2
 
 #include<stdio.h> 
 
