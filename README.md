@@ -4,8 +4,10 @@
     #include<stdio.h> 
     #include<stdlib.h> 
     #include<math.h>
+    
     int main()
     {
+    
     float x1, x2, y1, y2, distance, square;
      printf("Enter point 1: "); 
      scanf("%f %f",&x1,&y1);
@@ -23,41 +25,28 @@
 
 ##  Exercise 6.2
 
-#include<stdio.h> 
+    #include<stdio.h> 
+    int main()
+    {
 
-int main()
+    int number;
+    printf("Enter a number betwen 0 and 100: "); 
+    scanf("%d", &number);
 
-{
-
-int number;
-
-printf("Enter a number betwen 0 and 100: "); 
-
-scanf("%d", &number);
-
-if (number>-1 && number<61)
-
-printf("F", number);
-
-    else if(number>60 && number<71)
-    
-    printf("D", number);
-    
-      else if(number>70 && number<81)
-      
-      printf("C", number);
-      
-        else if(number>80 && number<91)
-        
-        printf("B", number);
-        
-           else if(number>90 && number<101)
-           
-           printf("A", number);
+    if (number>-1 && number<61)
+    printf("F", number);
+       else if(number>60 && number<71)
+       printf("D", number);
+          else if(number>70 && number<81)
+          printf("C", number);
+              else if(number>80 && number<91)
+              printf("B", number);
+                  else if(number>90 && number<101)
+                  printf("A", number);
  
- return(0);
+          return(0);
  
- }
+         }
 
 ## Exercise 6.3 
 
