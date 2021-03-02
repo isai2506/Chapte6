@@ -165,7 +165,7 @@
        printf("Your weekly pay is %d\n pesos", pay2);
     
     return 0;
-   }
+    }
 
 
 
