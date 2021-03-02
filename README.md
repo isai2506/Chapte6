@@ -36,3 +36,31 @@ square = pow((distance),2);
  
  
  }
+
+##Exercise 6.2
+
+#include<stdio.h> 
+
+int main()
+
+{
+
+int number;
+
+printf("Enter a number betwen 0 and 100: "); 
+scanf("%d", &number);
+
+if (number>-1 && number<61)
+printf("F", number);
+    else if(number>60 && number<71)
+    printf("D", number);
+      else if(number>70 && number<81)
+      printf("C", number);
+        else if(number>80 && number<91)
+        printf("B", number);
+           else if(number>90 && number<101)
+           printf("A", number);
+ 
+ return(0);
+ 
+ }
