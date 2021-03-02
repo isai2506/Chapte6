@@ -167,5 +167,28 @@
     return 0;
     }
 
+## Exercise 6.7 
 
+    #include<stdio.h> 
+    int main()
+    {
+
+    int hw;
+    printf("How many homeworks do you have? "); 
+    scanf("%d", &hw);
+
+    if (hw==0)
+    printf("Well done", hw);
+      else if(hw==1)
+      printf("You can bro, just one more", hw);
+        else if(hw>2 && hw<5)
+        printf("You have to work right now", hw);
+          else if(hw>5 && hw<10)
+          printf("Well nothing is impossible", hw);
+              else if(hw>10)
+              printf("God help you", hw);
+
+      return(0);
+
+     }
 
