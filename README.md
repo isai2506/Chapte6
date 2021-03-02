@@ -46,20 +46,20 @@
  
           return(0);
  
-         }
+       }
 
 ## Exercise 6.3 
 
     #include <stdio.h>
 
-char line[100];             
-int score;
-char plusminus;
+     char line[100];             
+     int score;
+     char plusminus;
 
-int main() {
-    printf("Enter a number between 0 and 100: ");     
-    fgets(line, sizeof(line), stdin);
-    sscanf(line, "%d", &score);
+       int main() {
+        printf("Enter a number between 0 and 100: ");     
+       fgets(line, sizeof(line), stdin);
+       sscanf(line, "%d", &score);
 
 
     if (score <= 60) 
