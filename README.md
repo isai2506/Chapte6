@@ -74,3 +74,42 @@ printf("F", number);
  return(0);
  
  }
+
+## Exercise 6.3 
+
+    #include <stdio.h>
+
+char line[100];             
+int score;
+char plusminus;
+
+int main() {
+    printf("Enter a number between 0 and 100: ");     
+    fgets(line, sizeof(line), stdin);
+    sscanf(line, "%d", &score);
+
+
+    if (score <= 60) 
+        printf("F");
+    
+    if (score <= 70 && score >60) {
+        printf("D");
+    }
+    if (score <= 80 && score >70) {
+        printf("C");
+    }
+    if (score <= 90 && score >80) {
+        printf("B");
+    }
+    if (score <= 100 && score >90) {
+        printf("A");
+    }
+
+    plusminus = line[1];
+    if (plusminus < "3") {
+        printf("-");
+    }
+    if (plusminus > "8") {
+        printf("+");
+    }
+}
